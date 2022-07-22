@@ -429,7 +429,40 @@ color: #188ce8;
 .footer-items li:not(:last-child) {
     margin-bottom: 9px;}
  
-  
+.socials {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.socials-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+
+}
+.socials-link:hover,
+.socials-link:focus {
+color: #FFFFFF ;
+background-color: #2196F3
+}
+. text-profession {
+margin-bottom: 30px;
+ }
+
+.socials-icon {
+    fill: currentcolor;
+}
+
+    
+
+
+ 
 /* portfolio page */
 
 
