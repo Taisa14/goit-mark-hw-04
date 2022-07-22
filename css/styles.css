@@ -451,18 +451,53 @@ color: #188ce8;
 color: #FFFFFF ;
 background-color: #2196F3
 }
-. text-profession {
+.text-profession {
 margin-bottom: 30px;
  }
 
 .socials-icon {
     fill: currentcolor;
 }
+.title-work {
+    margin-bottom: 30px;
+}
+ .conteiner-iconsbig {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    display: flex;
+    align-item: center;
+    justify-content: center;
+    margin-bottom: 30px;
+ }
 
     
-
-
- 
+.iconsbig {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.iconsbig item {
+    display: flex;
+    align-item: center;
+    justify-content: center;
+}
+.iconsbig-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+}
+.iconsbig list  {
+    margin-bottom: 10px;
+}
+.hero-title {
+    margin-bottom: 30px; 
+}
 /* portfolio page */
 
 
