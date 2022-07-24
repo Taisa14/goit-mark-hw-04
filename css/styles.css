@@ -54,7 +54,8 @@ img {
     padding-right: 15px;
     margin-left:auto;
     margin-right:auto;
-
+outline: 2px solid red;
+outline-offset: -2px;
     
 }
 .section {
@@ -62,7 +63,7 @@ img {
     padding-bottom: 94px;
 }
 
-// Header //
+
 
   .header {
     background: solid #FFFFFF
@@ -112,9 +113,9 @@ margin-right: 93px;
 .header-phone:focus {
     color: #2196F3;
 }
-.header-email {
+
    
-}
+
 .nav-item {
     display: block;
     padding: 32px 0;
@@ -134,7 +135,7 @@ color: #2196F3;
     color: #2196F3;
 }
 
-.header-item-studio: {
+.header-item-studio { 
     color: #212121;
 }
 
@@ -145,7 +146,7 @@ color: #2196F3;
     font-size: 14px;
     line-height: calc(16/14);
     letter-spacing: 0.02em;
-    color:var(--title-text-color)
+    color:var(--title-text-color);
     display: block;
 
 }
@@ -201,9 +202,7 @@ color: #757575;
 
 
 
-.hero {
-    background-image: url(../)
-    }
+
 .section-hero {
     background-position: center;
     max-width: 1600px;
@@ -212,16 +211,10 @@ color: #757575;
     background-repeat: no-repeat;
     margin-left: auto;
     margin-right: auto;
-    background-image: 
-    background-image: linear-gradient(to right, #2f303a 40%);
-    background-image: url ()
-    background-color: #C4C4C4;
-    
-    padding-top: 200px;
-    padding-bottom: 200px;
+    padding: 118px 0;
     text-align: center;
-    padding: 200px 0px;
-    background-color: #2f303a
+  background-image: linear-gradient(to right, #2F303A 40%);
+  background-image: url(../images/fon.jpg);
 
 }
 
@@ -278,12 +271,11 @@ letter-spacing: 0.03em;
 .title-work {
 font-weight: 700;
 font-size: 14px;
-line-height:calc(16/14)  ;
+line-height: calc(16/14);
 letter-spacing: 0.03em;
-text-transform: uppercase
+text-transform: uppercase;
 color: var(--title-text-color); 
 margin-bottom: 10px;
-
 }
 
 .text-work { 
@@ -473,45 +465,58 @@ margin-bottom: 30px;
 .socials-icon {
     fill: currentcolor;
 }
-.title-work {
-    margin-bottom: 30px;
-}
- .conteiner-iconsbig {
-    width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
+.benefits-inner-list {
     display: flex;
-    align-item: center;
-    justify-content: center;
-    margin-bottom: 30px;
- }
+    flex-wrap: wrap;
 
-    
-.iconsbig {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     gap: 30px;
 }
-.iconsbig item {
-    display: flex;
-    align-item: center;
-    justify-content: center;
-}
-.iconsbig-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+.benefits-item {
     width: 270px;
-    height: 120px;
-    background-color: #F5F4FA;
+    height: 251px;
+    
     border-radius: 4px;
 }
-.iconsbig list  {
+.benefits-icon {
+background-color: rgba(0, 0, 0, 0.25);
+width: 270px;
+height: 120px;
+margin-bottom: 20px;
+}
+.title-work {
     margin-bottom: 10px;
 }
+ 
+
 .hero-title {
     margin-bottom: 30px; 
+}
+.title-clients {
+text-align: center;
+font-family: Roboto;
+font-size: 36px;
+font-weight: 700;
+line-height: calc(42/36);
+letter-spacing: 0.03em;
+text-align: center;
+color: #212121;
+margin-bottom: 30px;
+}
+.clients-list {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    margin-bottom: 30px;
+    
+}
+.clients-item {
+    width: 170px;
+    height: 92px;
+
+}
+
+.clients-icon.current {
+    fill: #2196F3;
 }
 /* portfolio page */
 
@@ -538,7 +543,7 @@ display: flex;
     background-color: #2196F3;
     color: #FFFFFF;
 }
-.work-btn-item: hover,
+.work-btn-item:hover,
 .work-btn-item:focus {
     color: #FFFFFF
 }
