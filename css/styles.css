@@ -438,60 +438,100 @@ margin-bottom: 30px;
     margin-bottom: 30px;
     
 }
+.clients-item.current:hover{
+ fill: #2196F3;
+}
 .clients-item {
     width: 170px;
     height: 92px;
 
-}
 
+}
 .clients-icon.current {
-    fill: #2196F3;
+    caret-color:var(--accent-color)
 }
- /* footer */
+.clients-icon {
+ width: 106px;
+height: 60px;
+border-color: #AFB1B8;
+background-color: #E5E5E5;
+cursor: pointer;
+color: #AFB1B8;
+}
+
+/* footer portfolio */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
 
 
- 
- .footer-conteiner {
-    display: flex;
+    gap:30px;
+}
+.footer-conteiner {
+    display:flex;
     align-items: baseline;
- }
- .join-item {
-   display: flex;
-   align-items: center;
-   justify-content: center;
-   gap: 10px;
-   
- }
 
-
-
- 
- .footer-icon {
-    fill: currentcolor;
-    width: 20px;
-    height: 20px;
- }
- .social-inner {
+}
+.footer-left{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 44px;
-    height: 44px;
-    color: #AFB1B8;
-    background-color: #FFFFFF;
-    border-radius: 50%;
-    margin-right: 20px;
+    flex-direction: column;
+    outline: 2px solid red;
+}
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 0;
+    
+}
+.web-footer {
+    color: #2196F3;
+}
+
+.address {
+    list-style: none;
+    text-decoration: none;
+    color: #757575;
+}
+.footer-address{
+    color: #FFFFFF;
+}
+
+
+.address-list-item {
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
 
 }
-.social-inner:hover,
-.social-inner:focus {
-color: #FFFFFF ;
-background-color: #2196F3
+.address-list-item:last-child {
+margin-bottom: 0;
 }
- .join-text{
-    padding-top: 12px;
-    margin-bottom: 20px;
-    text-align: center;
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid red;
+    margin-right: 30px;
+    margin-left: 70px;
+    margin-top: 72px;
+
+}
+.join-text {
     padding-bottom: 20px;
     font-weight: 700;
     font-size: 14px;
@@ -499,79 +539,32 @@ background-color: #2196F3
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: var(--primery-white-color);
- }
- .footer list {
+}
+.footer-list {
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
- }
- .footer {
-   
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: var(--footer-bg-color);
- }
-
- 
- .logo-footer {
-    margin-bottom: 20px;
- }
-.footer-logo {
-    color: #2196f3;
-    font-family: Raleway,sans-serif;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
 }
-.footer-logo {
-    color: var(--primery-white-color);
-}
-
-
-
-
-.footer-adress {
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.06em;
-    color: var(--primery-white-color);
-    text-decoration: none;
-    font-style: normal;
-}
-.footer-adress:hover,
-.footer-adress:focus {
-color: #188ce8;
-}
-
-.footer-contact {
-    font-size: 14px;
-    line-height: calc(24/14);
-    letter-spacing: 0.06em;
-    color: rgba(255, 255, 255, 0.6);
-   font-style: normal;
-}
-
-.footer-contact:hover,
-.footer-contact:focus {
-color: #188ce8;
-}
-  
-
-
- .logo-footer {
-    margin-bottom: 20px;
- }
-
-
-.footer-address {
-    margin-top: 20px;
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    fill: var(--primery-white-color);
 
 }
-
-.footer-items li:not(:last-child) {
-    margin-bottom: 9px;}
- 
+.footer-link:hover,
+.footer-link:focus {
+background-color: var(--accent-color);
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
 
 /* portfolio page */
 
@@ -760,8 +753,111 @@ color:var(--primary-text-color);
 
 
 /* footer portfolio */
+.footer {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    background-color: #2F303A;
 
 
+    gap:30px;
+}
+.footer-conteiner {
+    display:flex;
+    align-items: baseline;
+
+}
+.footer-left{
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid red;
+}
+.logo-footer{
+    display: inline-block;
+    margin-bottom: 20px;
+    font-family: "Raleway";
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    color: var(--primery-white-color);
+    text-decoration: none;
+    margin-left: 30px;
+    margin-bottom: 0;
+
+}
+.web-footer {
+    color: #2196F3;
+}
+
+.address {
+    list-style: none;
+    text-decoration: none;
+    color: #757575;
+}
+.footer-address{
+    color: #FFFFFF;
+}
+
+
+.address-list-item {
+    margin-bottom: 9px;
+    color: rgba(255, 255, 255, 0.6);
+    font-style: normal;
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: 0.03em;
+    text-align: left;
+
+
+}
+.address-list-item:last-child {
+margin-bottom: 0;
+}
+.footer-right {
+    display: flex;
+    flex-direction: column;
+    outline: 2px solid red;
+    margin-right: 30px;
+    margin-left: 70px;
+    margin-top: 72px;
+
+}
+.join-text {
+    padding-bottom: 20px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--primery-white-color);
+}
+.footer-list {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.footer-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: rgba(255,255,255,0.1);
+    fill: var(--primery-white-color);
+
+}
+.footer-link:hover,
+.footer-link:focus {
+background-color: var(--accent-color);
+}
+.social-icon {
+    width: 20px;
+    height: 20px;
+}
 
 
 
