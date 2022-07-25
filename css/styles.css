@@ -504,7 +504,10 @@ color: #AFB1B8;
 .footer-address{
     color: #FFFFFF;
 }
-
+.address-link:hover,
+.address-link:focus {
+    color: #2196f3;
+}
 
 .address-list-item {
     margin-bottom: 9px;
